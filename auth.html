@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>VSCC Challenges</title>
+ <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ek+Mukta">
+ <link rel="stylesheet" type="text/css" href="/vscc.css">
+<style>
+body {
+    background: url("/clubphoto.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+table#t01 {
+    background-color: #ffffff;
+}
+</style>
+<script type="text/javascript">
+        showing = true;
+        function toggleInfo() {
+                if (showing == false) {
+                        var items = document.getElementsByName("segmentinfo");
+                        for (var i = 0; i < items.length; i++) {
+                        items[i].style.visibility="visible";
+                        items[i].style.border="1px";
+                        items[i].style.padding="1px";
+                        }
+                        showing = true;
+                } else {
+                        var items = document.getElementsByName("segmentinfo");
+                        for (var i = 0; i < items.length; i++) {
+                        items[i].style.visibility="hidden";
+                        items[i].style.border="none";
+                        items[i].style.padding="0";
+                        }
+                        showing = false;
+                }
+        }
+        </script>
+</head>
+
+
+<body onload="toggleInfo()">
+<div class=white>
+</div>
+<div class=transparent>
+<a href="/vs3l/index.html"><img src="/icons/vs3l.jpg" height="100px" align="none" hspace="5"></a>
+<a href="/grimpeur/index.html"><img src="/icons/grimpeur.jpg" height="100px" align="none" hspace="5"></a>
+<a href="/vscctt/index.html"><img src="/icons/vscctt.png" height="100px" align="none" hspace="5"></a>
+<a href="/vstc/index.html"><img src="/icons/vstcbutton.png" height="100px" align="none" hspace="5"></a>
+</div>
+<div id="page-wrap" class="main09">
+Click on the "Connect with Strava" button to authorise the data collection app for VSCC and VSTC challenges<br>
+You must also be part of the appropriate Strava clubs for each challenge. That is VS3L, Grimpeur, VSCCTT and VSTC.<br>
+Links to the Strava clubs can be found via the Strava button on each challenge page.
+<br><br>
+<a href="https://www.strava.com/oauth/authorize?client_id=7518&response_type=code&redirect_uri=http://vsccauth.vscc-challenges.cc&ap
+proval_prompt=force&scope=read,activity:read">
+<img src="/icons/strava_connect.png"></a>
+<br><br>
+Authorising the app means that the following information will collected 
+and used in the creation of the various VSCC leagues and competitions 
+that rely on Strava data such as VS3L and Grimpeur challenges:
+<br><br>
+<a href="https://developers.strava.com/docs/reference/#api-Athletes-getLoggedInAthletes">
+Strava Club member list. Names, athelete_id, avatar, lcoation. No age though.
+</a>
+<br><br>
+<a href="https://developers.strava.com/docs/reference/#api-Segments-getSegmentById">
+Segment information. Segment name, elevation, distance etc.
+</a>
+<br><br>
+<a href="https://developers.strava.com/docs/reference/#api-SegmentEfforts-getEffortsBySegmentId">
+Segment efforts. Athete_id, time, power, whether KOM or PR etc.
+</a>
+<br><br>
+<a href="https://www.strava.com/settings/apps">
+Click here to find all your currently authorised apps
+</a> 
+it is also here that you can revoke authorisation.
+<br><br>
+<img src="/icons/strava_api.png"></a>
+</div>
+
+</body>
+</html>
