@@ -1,0 +1,21 @@
+#!/bin/bash
+aws s3 cp faq.html s3://www.vscc-challenges.cc --region eu-west-1
+aws s3 cp joinin.html s3://www.vscc-challenges.cc --region eu-west-1
+aws s3 cp joininycf.html s3://www.vscc-challenges.cc --region eu-west-1
+aws s3 cp icons.html s3://www.vscc-challenges.cc/icons.html --region eu-west-1
+aws s3 cp index.html s3://www.vscc-challenges.cc/index.html --region eu-west-1
+aws s3 cp auth.html s3://www.vscc-challenges.cc --region eu-west-1
+aws s3 cp authycf.html s3://www.vscc-challenges.cc --region eu-west-1
+aws s3 cp vscc.css s3://www.vscc-challenges.cc --region eu-west-1
+aws s3 cp vsac.css s3://www.vscc-challenges.cc --region eu-west-1
+aws s3 cp ycf.css s3://www.vscc-challenges.cc --region eu-west-1
+aws s3 cp faq.html s3://vscc-challenges.cc --region eu-west-1
+aws s3 cp joinin.html s3://vscc-challenges.cc --region eu-west-1
+aws s3 cp joininycf.html s3://vscc-challenges.cc --region eu-west-1
+aws s3 cp icons.html s3://vscc-challenges.cc/icons.html --region eu-west-1
+aws s3 cp index.html s3://vscc-challenges.cc/index.html --region eu-west-1
+aws s3 cp auth.html s3://vscc-challenges.cc --region eu-west-1
+aws s3 cp authycf.html s3://vscc-challenges.cc --region eu-west-1
+aws s3 cp vscc.css s3://vscc-challenges.cc --region eu-west-1
+aws s3 cp vsac.css s3://vscc-challenges.cc --region eu-west-1
+aws s3 cp ycf.css s3://vscc-challenges.cc --region eu-west-1
